@@ -1,0 +1,234 @@
+body {
+  background: #1b1e22;
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1133px;
+  margin: auto;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.flex-logotip {
+ display: flex;
+
+}
+
+
+.eng {
+  color: rgba(196, 196, 196, 0.5);
+  font-size: 13px;
+  font-weight: 500;
+  padding-right: 21px;
+  
+}
+.pyc {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.navigation-but nav ul{
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  list-style: none;
+}
+.navigation-but__but{
+display: flex;
+  color: #FFF;
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+display: flex;
+width: 146px;
+height: 52px;
+flex-direction: column;
+justify-content: center;
+border-radius: 10px;
+border: 1px solid #FFB800;
+}
+.greeting {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.03) 2.91%,
+      rgba(27, 30, 34, 0.4) 49.31%,
+      #1b1e22 93.77%
+    ),
+    url(../images/main-bg.jpeg);
+  padding-top: 169px;
+}
+.greeting__tour-search {
+  border-radius: 10px;
+  background: rgba(51, 51, 51, 0.25);
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  padding: 51px 70px 55px;
+  max-width: 500px;
+}
+
+.greeting__hero__zagolovok {
+  color: #FFF;
+font-size: 48px;
+font-weight: 500;
+}
+.greeting__tour-search__poisk {
+  
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 22px;
+}
+
+
+.greeting__tour-search input {
+  border-radius: 4px;
+  border: 1px solid #fff;
+  height: 36px;
+  
+}
+.greeting__date-time input {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  border: 1px solid #fff;
+}
+.greeting__submit-btn {
+  display: block;
+  
+  height: 36px;
+  width: 100%;
+  background-color: #FFB800;
+ 
+}
+
+.actual__card__vr {
+  padding-top: 24px;
+}
+.actual__card {
+  width: 361px;
+  background-color: #23282f;
+  position: relative;
+  transition: 0.7s;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.actual__card:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+.actual__card:hover .actual__descr h3,
+.actual__card:hover .actual__descr p {
+  color: #333;
+}
+.actual__card:hover .actual__descr a {
+  color: rgba(0, 0, 0, 0.5);
+}
+.actual__card:hover .actual__price-date {
+  transform: translateY(14px);
+}
+.actual__cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.actual__title {
+  color: #fff;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500;
+  padding-bottom: 45px;
+}
+.actual__img {
+  position: relative; /*Становиться родителем обсолют элеиента*/
+  background-color: #23282f;
+}
+.actual__img img {
+  border-radius: 4px 4px 0px 0px;
+  background-color: #23282f;
+}
+
+.actual__price-date {
+  position: absolute; /*выпал из поток. Можно назначать размещение (top, right, botoom, left) */
+  left: 0;
+  bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s;
+}
+.actual__card:hover .actual__price span {
+  font-size: 24px;
+}
+.actual__price {
+  background-color: #ffb800;
+  height: 32px;
+  padding: 4px 0px 0px 2px;
+}
+.actual__price span {
+  color: #1b1e22;
+  font-size: 20px;
+  font-weight: 700;
+}
+.actual__date {
+  border-radius: 0px 6px 6px 0px;
+  background: rgba(28, 30, 33, 0.75);
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 0px;
+  width: 171px;
+  height: 32px;
+}
+.actual__descr {
+  padding: 16px 21px 24px; /*Верхний, правый-левый, нижний*/
+}
+.actual__descr h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.actual__descr p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 16px;
+  padding-bottom: 55px;
+  line-height: 20px;
+}
+.actual__descr a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.5;
+  position: absolute; /*выпал из поток. Можно назначать размещение (top, right, botoom, left) */
+  left: 20px;
+  bottom: 24px;
+}
+.move-to {
+  padding: 49px 458px 0px;
+}
+.to {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid #ffb800;
+  width: 217px;
+  height: 48px;
+  padding: 11px;
+}
